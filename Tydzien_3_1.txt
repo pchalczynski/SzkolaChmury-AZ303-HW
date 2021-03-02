@@ -1,0 +1,15 @@
+#TYDZIEN3.1 „Zbuduj prostą konwencję nazewniczą dla min. takich zasobów jak Grupa Zasobów, VNET, Maszyn Wirtualna, Dysk, Konta składowania danych.
+Pamiętaj o ograniczeniach w nazywaniu zasobów, które występują w Azure”
+
+Moja propozycja:
+
+nazwa: a..z
+srodowisko: prd,tst,dev, ...
+region: westus, eastus2, ...
+###: 001, 002, ...
+
+Resource Group: 	 rg-<nazwa>-<srodowisko>-###			      (max 90 znaków)
+VNET:			         vnet-<nazwa>-<srodowisko>-<region>-###	(max 64 znaki)
+Maszyna Wirtualna: vm-<nazwa>-<srodowisko>-###		        (max 15 znaków)
+Dysk:			         disk-<nazwa>-<srodowisko>-###			    (max 80 znaków)
+Konto składowania: st<nazwa><srodowisko>###			          (max 24 znaki)
